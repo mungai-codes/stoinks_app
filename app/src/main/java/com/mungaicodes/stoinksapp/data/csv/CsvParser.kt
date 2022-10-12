@@ -1,4 +1,7 @@
 package com.mungaicodes.stoinksapp.data.csv
 
-interface CsvParser {
+import java.io.InputStream
+
+interface CsvParser<T> {
+    suspend fun parse(stream: InputStream): List<T>
 }

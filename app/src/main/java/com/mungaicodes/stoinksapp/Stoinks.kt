@@ -1,4 +1,7 @@
 package com.mungaicodes.stoinksapp
 
-class Stoinks {
-}
+import android.app.Application
+import dagger.hilt.android.HiltAndroidApp
+
+@HiltAndroidApp
+class Stoinks : Application()
